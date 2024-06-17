@@ -25,13 +25,14 @@ There are two ways to build API documentation: [OpenAPI](https://mintlify.com/do
 All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
 
 ```php
-// Include the Stripe PHP library 
-require_once 'stripe-php/init.php'; 
- 
-// Set API key 
-\Stripe\Stripe::setApiKey(STRIPE_API_KEY); 
- 
-// Retrieve JSON from POST body 
-$jsonStr = file_get_contents('php://input'); 
-$jsonObj = json_decode($jsonStr); 
+// Include the UpamPay PHP library
+require_once 'upampay-php/init.php';
+
+// Set API key
+\UpamPay\UpamPay::setApiKey(UPAMPAY_API_KEY);
+
+// Retrieve JSON from POST body
+$jsonStr = file_get_contents('php://input');
+$jsonObj = json_decode($jsonStr);
+
 ```
